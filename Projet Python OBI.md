@@ -124,7 +124,7 @@ Première étape de filtrage des reads en fonction des adaptateurs.
 	    for val in ReadSet.values():
 		    read_qual=val
 		    read=read_qual[0]
-		    for i in  range (len(Adaptateurs)):
+		    for i in range (len(Adaptateurs)):
 			    fin =  len(Adaptateurs[i])-1
 			    a=read[0:fin]
 			    if a == Adaptateurs[i] :
@@ -135,7 +135,7 @@ Première étape de filtrage des reads en fonction des adaptateurs.
 					read=read.replace(b,"")
 		return ReadSet
 
-THEN
+Deuxième filtre. 
 
     def  FiltreAdaptateurs(ReadSet, Adaptateurs):
 
@@ -157,5 +157,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1MTcxNDMxLDE3MDkyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbLTExMDIzMTk3NzEsODU1MTcxNDMxLDE3MD
+kyOTM3MDddfQ==
 -->
