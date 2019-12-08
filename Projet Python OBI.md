@@ -135,23 +135,23 @@ Première étape de filtrage des reads en fonction des adaptateurs.
 					read=read.replace(b,"")
 		return ReadSet
 
-Deuxième filtre.
+Deuxième étape de filtrage qui permet le nettoyage des reads des bases aux extrémités ayant un seuil de qualité.
 
     def FiltreExtremites(ReadSet,SeuilQualite):
-	for keys,val in ReadSet.items():	
-		read_qual=val
-		qual=read_qual[1]
-		read=read_qual[0]
-		while qual[0] < SeuilQualite:
-			qual = qual[1:]
-			read = read[1:]
-		while qual[-1] < SeuilQualite and len(qual) > 0 :
-			qual = qual[:-1]
-			read = read[:-1]
-		read_qual[0]=read
-		read_qual[1] = qual
-		ReadSet[keys]=read_qual
-	return ReadSet
+		for keys,val in ReadSet.items():	
+			read_qual=val
+			qual=read_qual[1]
+			read=read_qual[0]
+			while qual[0] < SeuilQualite:
+				qual = qual[1:]
+				read = read[1:]
+			while qual[-1] < SeuilQualite and len(qual) > 0 :
+				qual = qual[:-1]
+				read = read[:-1]
+			read_qual[0]=read
+			read_qual[1] = qual
+			ReadSet[keys]=read_qual
+		return ReadSet
 
 
 THEN
@@ -171,6 +171,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxNDIyMzYxLDg1NTE3MTQzMSwxNzA5Mj
-kzNzA3XX0=
+eyJoaXN0b3J5IjpbLTgxODYxOTUyMSw4NTUxNzE0MzEsMTcwOT
+I5MzcwN119
 -->
