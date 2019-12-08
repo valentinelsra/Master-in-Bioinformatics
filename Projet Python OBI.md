@@ -250,7 +250,7 @@ On assemble les reads pour générer une liste de contig.
 	        Set_new[key] = fusion
 	    return Set_new 
 
-
+Enfin, on assemble les contig dans le but de former une séquence génétique se rapprochant au plus de la séquence génétique de départ.
 
     def AssemblageGene(ContigSet):
 	    Set_tmp = ContigSet.copy()
@@ -276,6 +276,6 @@ On assemble les reads pour générer une liste de contig.
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzA1OTkyNzIsMTIwNzI5MjAzMCw4NT
-UxNzE0MzEsMTcwOTI5MzcwN119
+eyJoaXN0b3J5IjpbLTEzNTg2NDY1OCwxMjA3MjkyMDMwLDg1NT
+E3MTQzMSwxNzA5MjkzNzA3XX0=
 -->
