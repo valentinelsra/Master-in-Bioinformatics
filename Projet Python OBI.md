@@ -184,7 +184,7 @@ Une séquence complémentaire inverse d'un read est créée.
 		inver=inver[::-1]
 		return inver
 
-THEN
+Le meilleur chevauchement est recherché 
 
     def BestReadChevauchant(Read,ReadSet):
 	    Rset=ReadSet.values()
@@ -241,19 +241,19 @@ THEN
 	                break
 	            loc = fusion.split(motif)
 	            if loc[0] == '': # localization of motif : begin/end ?
-                fusion = fusion.replace(motif,'',1)
-                fusion = Set_tmp[key_tmp][0] + fusion
-            else:
-                read = read.replace(motif,'',1)
-                fusion = fusion + Set_tmp[key_tmp][0]
-            Set_tmp.pop(key_tmp)
-        Set_new[key] = fusion
-    return Set_new 
+	                fusion = fusion.replace(motif,'',1)
+	                fusion = Set_tmp[key_tmp][0] + fusion
+	            else:
+	                read = read.replace(motif,'',1)
+	                fusion = fusion + Set_tmp[key_tmp][0]
+	            Set_tmp.pop(key_tmp)
+	        Set_new[key] = fusion
+	    return Set_new 
 
 ## Conçu avec :
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY3NDc0NzYsODU1MTcxNDMxLDE3MD
-kyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbMTIwNzI5MjAzMCw4NTUxNzE0MzEsMTcwOT
+I5MzcwN119
 -->
