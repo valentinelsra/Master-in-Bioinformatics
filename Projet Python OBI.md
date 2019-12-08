@@ -37,6 +37,9 @@ Les reads sont filtrés en fonction des adaptateurs.  Il est possible de modifie
     Adaptateurs)
     print(Filtrage)
 
+Le seuil de qualités des nucléotides est fixé à 0,6. Il est également possible de modifier cette valeur.
+
+    SeuilQualite = 0.6
 
 
 ## Fonctions utilisées
@@ -152,5 +155,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjA4MjcxNiwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbLTgxMzE4ODkyNywxNzA5MjkzNzA3XX0=
 -->
