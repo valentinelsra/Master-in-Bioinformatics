@@ -42,6 +42,7 @@ Le seuil de qualités des nucléotides est fixé à 0,6. Il est également possi
     SeuilQualite = 0.6
 
 
+
 ## Fonctions utilisées
 
 Nous créons une fonction permettant le stockage de la séquence nucléique du gène. Si cette séquence respecte un format Fasta, elle est nettoyée des éventuels espaces et incluse sous la forme d'une chaîne de caractère dans une liste elle-même incluse dans un dictionnaire.
@@ -276,6 +277,6 @@ Enfin, on assemble les contig dans le but de former une séquence génétique se
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTg2NDY1OCwxMjA3MjkyMDMwLDg1NT
-E3MTQzMSwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbMjI3ODI5NjMyLDEyMDcyOTIwMzAsODU1MT
+cxNDMxLDE3MDkyOTM3MDddfQ==
 -->
