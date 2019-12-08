@@ -189,12 +189,12 @@ THEN
     def BestReadChevauchant(Read,ReadSet):
 	    Rset=ReadSet.values()
 	    Rset_inv = inverseReads(ReadSet).values()
-    stock = list(Rset) + list(Rset_inv)
-    motif_best=""
-    Rkey_best=""
-    Read_best=""
-    for i in range(len(stock)):
-        if stock[i][0] not in Read and ReverseComplement(stock[i][0]) not in Read:
+	    stock = list(Rset) + list(Rset_inv)
+	    motif_best=""
+	    Rkey_best=""
+	    Read_best=""
+	    for i in range(len(stock)):
+	        if stock[i][0] not in Read and ReverseComplement(stock[i][0]) not in Read:
             k=0
             motif=""
             for right in range(len(stock[i][0])):
@@ -225,13 +225,14 @@ THEN
                 if i < len(ReadSet):
                     Rkey_best = list(ReadSet.keys())[i]
                 Rkey_best = list(ReadSet.keys())[i-len(ReadSet)]
-    return Rkey_best,Read_best,motif_best 
+		   return Rkey_best,Read_best,motif_best 
+
 
 
 ## Conçu avec :
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcyNjUzNzQzLDg1NTE3MTQzMSwxNzA5Mj
-kzNzA3XX0=
+eyJoaXN0b3J5IjpbLTIwMTQwMzMxMzksODU1MTcxNDMxLDE3MD
+kyOTM3MDddfQ==
 -->
