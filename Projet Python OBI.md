@@ -43,7 +43,8 @@ Les reads sont filtrés en fonction des adaptateurs.  Il est possible de modifie
 
 Nous créons une fonction permettant le stockage de la séquence nucléique du gène. Si cette séquence respecte un format Fasta, elle est nettoyée des éventuels espaces et incluse sous la forme d'une chaîne de caractère dans une liste elle-même incluse dans un dictionnaire.
 
-    def  readFASTA(filename):
+    def  readFASTA():
+	    filename = input("Selectionner un fichier")
 		dic={}
 	    f=open(filename,"r")
 	    a=f.readline()
@@ -151,5 +152,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ0NzQxODM0LDE3MDkyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbMTM2MjA4MjcxNiwxNzA5MjkzNzA3XX0=
 -->
