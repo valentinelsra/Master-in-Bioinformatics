@@ -31,9 +31,10 @@ Une liste d'adapteurs est mise au point. Ces motifs correspondent à des adaptat
 
     Adaptateurs = ["DLKZEF","OEFNZEI","AZEA","KEFOJZEFAA"]
 
-Les reads sont filtrés en fonction des adaptateurs. Les résultats du filtrage sont affichés à l'écran.
+Les reads sont filtrés en fonction des adaptateurs.  Il est possible de modifier ces adaptateurs selon le protocole utilisé pendant le séquençage. Les résultats du filtrage sont affichés à l'écran.
 
-    Filtrage = FiltreAdaptateurs(a, Adaptateurs)
+    Filtrage = FiltreAdaptateurs(a, 		  				
+    Adaptateurs)
     print(Filtrage)
 
 
@@ -150,5 +151,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTI5MzcwN119
+eyJoaXN0b3J5IjpbNDQ0NzQxODM0LDE3MDkyOTM3MDddfQ==
 -->
