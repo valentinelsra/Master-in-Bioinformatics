@@ -25,7 +25,7 @@ Dans un premier temps, chargeons la séquence nucléique.
 
 Nous générons ensuite des reads. C'est une simulation du séquençage de cette séquence nucléique.
 
-    generer(sequence)
+    generer(dic)
 
 Une liste d'adapteurs est mise au point. Ces motifs correspondent à des adaptateurs que nous aurions pu ajouter aux extrémités de notre séquence nucléique lors d'une réelle expérience de séquençage.
 
@@ -118,7 +118,7 @@ Le traitement des données commence. Les reads sont récupérés d'un fichier et
 		return dic
 
  
-Filtrage :
+Première étape de filtrage en fonction des adaptateurs.
 
     def  FiltreAdaptateurs(ReadSet, Adaptateurs):
 	    for val in ReadSet.values():
@@ -157,5 +157,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTc3MTYzMiwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbMTAzNjk5NTUxMCwxNzA5MjkzNzA3XX0=
 -->
