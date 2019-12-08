@@ -168,7 +168,7 @@ Troisième étape de filtrage. Les reads ayant un valeur de qualité inférieure
 	            Rset_new[keys] = val
 	            return ReadSet
 
-THEN
+Une séquenceinverse d'un read est créée, 
 
     def ReverseComplement (Read):
 		inver=""
@@ -193,6 +193,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTE5MTYsODU1MTcxNDMxLDE3MDkyOT
-M3MDddfQ==
+eyJoaXN0b3J5IjpbMzAwOTMyMzY0LDg1NTE3MTQzMSwxNzA5Mj
+kzNzA3XX0=
 -->
