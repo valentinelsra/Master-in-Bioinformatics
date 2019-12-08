@@ -227,7 +227,7 @@ Pour chaque read, le meilleur chevauchement est recherché.
                 Rkey_best = list(ReadSet.keys())[i-len(ReadSet)]
 		   return Rkey_best,Read_best,motif_best 
 
-
+On assemble les reads pour générer une liste de contig.
 
     def AssemblageContigs(ReadSet):
 	    Set_new={}
@@ -250,7 +250,7 @@ Pour chaque read, le meilleur chevauchement est recherché.
 	        Set_new[key] = fusion
 	    return Set_new 
 
-THEN
+
 
     def AssemblageGene(ContigSet):
 	    Set_tmp = ContigSet.copy()
@@ -276,6 +276,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDAwMjYxOSwxMjA3MjkyMDMwLDg1NT
-E3MTQzMSwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbLTE4MzA1OTkyNzIsMTIwNzI5MjAzMCw4NT
+UxNzE0MzEsMTcwOTI5MzcwN119
 -->
