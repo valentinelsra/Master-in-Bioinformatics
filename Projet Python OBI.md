@@ -37,10 +37,10 @@ Les reads sont filtrés en fonction des adaptateurs.  Il est possible de modifie
     Adaptateurs)
     print(Filtrage)
 
-Le seuil de qualités des nucléotides est fixé à 0,6. Il est également possible de modifier cette valeur.
+Le seuil de qualités des nucléotides est fixé à 0,6. Il est également possible de modifier cette valeur. Le seuil M correspond à la moyenne des valeurs de qualité des reads.
 
-    SeuilQualite = 0.6
-
+    SeuilQualite = 0,6
+	MSeuilQualité = 0,6
 
 
 ## Fonctions utilisées
@@ -277,6 +277,6 @@ Enfin, on assemble les contig dans le but de former une séquence génétique se
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3ODI5NjMyLDEyMDcyOTIwMzAsODU1MT
-cxNDMxLDE3MDkyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbMjAxNzY3MDE5OSwxMjA3MjkyMDMwLDg1NT
+E3MTQzMSwxNzA5MjkzNzA3XX0=
 -->
