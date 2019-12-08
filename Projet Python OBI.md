@@ -156,7 +156,7 @@ Deuxième étape de filtrage qui permet le nettoyage des reads des bases aux ext
 
 Troisième étape de filtrage. Les reads ayant un valeur de qualité inférieure au seuil sont supprimés.
 
-    def Filtre (ReadSet, SeuilQualite):
+    def Filtre (ReadSet, MSeuilQualite):
 	    Rset_new = dict()
 	    for keys,val in ReadSet.items():	
 	        qual = val[1]
@@ -164,7 +164,7 @@ Troisième étape de filtrage. Les reads ayant un valeur de qualité inférieure
 	        for i in qual:
 	            som+=i
 	        moy=som/len(qual)
-	        if moy > SeuilQualite:
+	        if moy > MSeuilQualite:
 	            Rset_new[keys] = val
 	            return ReadSet
 
@@ -193,6 +193,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjk4MTMzNCw4NTUxNzE0MzEsMTcwOT
-I5MzcwN119
+eyJoaXN0b3J5IjpbLTc3OTE5MTYsODU1MTcxNDMxLDE3MDkyOT
+M3MDddfQ==
 -->
