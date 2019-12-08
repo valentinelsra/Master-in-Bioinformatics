@@ -227,12 +227,14 @@ THEN
                 Rkey_best = list(ReadSet.keys())[i-len(ReadSet)]
 		   return Rkey_best,Read_best,motif_best 
 
+THEN
+
 
 
 ## Conçu avec :
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQwMzMxMzksODU1MTcxNDMxLDE3MD
-kyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbMzM1ODQzNzU2LDg1NTE3MTQzMSwxNzA5Mj
+kzNzA3XX0=
 -->
