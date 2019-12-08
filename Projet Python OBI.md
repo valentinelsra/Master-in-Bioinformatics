@@ -154,7 +154,7 @@ Deuxième étape de filtrage qui permet le nettoyage des reads des bases aux ext
 		return ReadSet
 
 
-Troisième étape de filtr
+Troisième étape de filtrage. Les reads ayant un valeur de qualité inférieure au seuil sont supprimés.
 
     def Filtre (ReadSet, SeuilQualite):
 	    Rset_new = dict()
@@ -193,6 +193,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTAwNTM3NSw4NTUxNzE0MzEsMTcwOT
+eyJoaXN0b3J5IjpbMTYxMjk4MTMzNCw4NTUxNzE0MzEsMTcwOT
 I5MzcwN119
 -->
