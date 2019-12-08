@@ -227,7 +227,7 @@ Pour chaque read, le meilleur chevauchement est recherché.
                 Rkey_best = list(ReadSet.keys())[i-len(ReadSet)]
 		   return Rkey_best,Read_best,motif_best 
 
-THEN
+
 
     def AssemblageContigs(ReadSet):
 	    Set_new={}
@@ -252,13 +252,30 @@ THEN
 
 THEN
 
-
+    def AssemblageGene(ContigSet):
+	    Set_tmp = ContigSet.copy()
+	    keys_tmp = list(ContigSet.keys())
+	    fusion = Set_tmp[keys_tmp[0]] # Take the first contig
+	    Set_tmp.pop(keys_tmp[0])
+	    while len(Set_tmp) > 0:
+	        key_tmp,contig,motif = BestReadChevauchant(fusion,Set_tmp)
+	        if len(motif) < 8:
+	            break # All close contigs have been fused (others have not significative overlap)
+	        loc = fusion.split(motif)
+	        if loc[0] == '':
+	            fusion = fusion.replace(motif,'',1)
+	            fusion = Set_tmp[key_tmp][0] + fusion
+	        else:
+	            contig = contig.replace(motif,'',1)
+	            fusion = fusion + Set_tmp[key_tmp][0]
+	        Set_tmp.pop(key_tmp)
+	    return fusion
 
 
 ## Conçu avec :
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzk1MjE3MCwxMjA3MjkyMDMwLDg1NT
+eyJoaXN0b3J5IjpbLTUwNDAwMjYxOSwxMjA3MjkyMDMwLDg1NT
 E3MTQzMSwxNzA5MjkzNzA3XX0=
 -->
