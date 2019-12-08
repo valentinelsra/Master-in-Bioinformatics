@@ -184,7 +184,7 @@ Une séquence complémentaire inverse d'un read est créée.
 		inver=inver[::-1]
 		return inver
 
-Le meilleur chevauchement es
+Pour chaque read, le meilleur chevauchement est recherché.
 
     def BestReadChevauchant(Read,ReadSet):
 	    Rset=ReadSet.values()
@@ -254,6 +254,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1Mzc5MjU1OSwxMjA3MjkyMDMwLDg1NT
-E3MTQzMSwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbMzMyNDIwMDEzLDEyMDcyOTIwMzAsODU1MT
+cxNDMxLDE3MDkyOTM3MDddfQ==
 -->
