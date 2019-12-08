@@ -118,7 +118,7 @@ Le traitement des données commence. Les reads sont récupérés d'un fichier et
 		return dic
 
  
-Première étape de filtrage en fonction des adaptateurs.
+Première étape de filtrage des reads en fonction des adaptateurs.
 
     def  FiltreAdaptateurs(ReadSet, Adaptateurs):
 	    for val in ReadSet.values():
@@ -157,5 +157,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjk5NTUxMCwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbODU1MTcxNDMxLDE3MDkyOTM3MDddfQ==
 -->
