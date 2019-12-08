@@ -154,7 +154,7 @@ Deuxième étape de filtrage qui permet le nettoyage des reads des bases aux ext
 		return ReadSet
 
 
-THEN
+Troisième étape de filtr
 
     def Filtre (ReadSet, SeuilQualite):
 	    Rset_new = dict()
@@ -173,16 +173,16 @@ THEN
     def ReverseComplement (Read):
 		inver=""
 		for i in range(len(Read)):
-		if Read[i]== 'A':
-			inver=inver+'T'	
-		elif Read[i]== 'T':
-			inver=inver+"A"
-		elif Read[i]== 'C':
-			inver=inver+'G'
-		elif Read[i]== 'G':
-			inver=inver+'C' 
-	inver=inver[::-1]
-	return inver
+			if Read[i]== 'A':
+				inver=inver+'T'	
+			elif Read[i]== 'T':
+				inver=inver+"A"
+			elif Read[i]== 'C':
+				inver=inver+'G'
+			elif Read[i]== 'G':
+				inver=inver+'C' 
+		inver=inver[::-1]
+		return inver
 
 THEN
 
@@ -193,6 +193,6 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE2NDQ0NjEsODU1MTcxNDMxLDE3MD
-kyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbLTQ2MTAwNTM3NSw4NTUxNzE0MzEsMTcwOT
+I5MzcwN119
 -->
