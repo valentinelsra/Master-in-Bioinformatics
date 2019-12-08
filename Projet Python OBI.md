@@ -71,11 +71,12 @@ Nous créons une fonction permettant le stockage de la séquence nucléique du g
 		return dic
 				    
 
-La séquence est découpée en reads de tailles variables qui seront ensuite stockés dans un dictionnaire. ??
+La séquence est découpée en reads de taille fixe (100nt) qui seront ensuite stockés dans un dictionnaire. ??
 
     def  generer(dic):
 	    seq=dic.values()
 		seq=seq[0]
+		filename = input("Selectionner un nom de  fichier")
 	    f=open("readsset","w")
 		for i in  range (10):
 			pos=random.randint(0,len(seq))
@@ -155,5 +156,5 @@ THEN
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzE4ODkyNywxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbODU2MjIwMTYxLDE3MDkyOTM3MDddfQ==
 -->
