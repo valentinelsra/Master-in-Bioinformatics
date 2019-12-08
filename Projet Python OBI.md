@@ -250,10 +250,15 @@ THEN
 	        Set_new[key] = fusion
 	    return Set_new 
 
+THEN
+
+
+
+
 ## Conçu avec :
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyNDIwMDEzLDEyMDcyOTIwMzAsODU1MT
-cxNDMxLDE3MDkyOTM3MDddfQ==
+eyJoaXN0b3J5IjpbLTE2Nzk1MjE3MCwxMjA3MjkyMDMwLDg1NT
+E3MTQzMSwxNzA5MjkzNzA3XX0=
 -->
