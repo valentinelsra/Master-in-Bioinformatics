@@ -1,12 +1,6 @@
 # Projet Assemblage
 
-Grâce à des nouvelles technologies dites de séquençage, il est aujourd'hui possible de lire le génome d’un individu rapidement et à moindre coût. Le séquençage produit un grand nombre de petits segments du génome appelés lectures (_**reads**_ en anglais).
 
-Un _**read**_ est une courte chaîne de bases nucléiques (soit de caractères parmi les quatre suivants : ‘A’, ‘T’, ‘G’, ‘C’). Chaque read est identifié par un identifiant unique numérique. Pour chaque read on connaît la _qualité_ de séquençage des bases nucléiques qui le composent : chaque base nucléique dans un read a une valeur de qualité associée correspondant à un nombre réél compris dans l’intervalle [0, 1].
-
-_Par exemple le read 1 est défini par la séquence de taille 10 « AGGGTCCCGA » et les valeurs de qualité suivantes « 0.3 0.25 0.7 0.9 0.95 0.3 0.91 0.87 0.4 0.35 »_
-
-Par ce programme, nous modélisons en langage Python un ensemble de tels reads de tailles L (comprise entre _20_ et _100)_, produits suite au séquençage d’une séquence génomique.
 
 
 # Programme
@@ -277,6 +271,6 @@ Enfin, on assemble les contig dans le but de former une séquence génétique se
 
  - Emacs (programmation en Python3)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzY3MDE5OSwxMjA3MjkyMDMwLDg1NT
-E3MTQzMSwxNzA5MjkzNzA3XX0=
+eyJoaXN0b3J5IjpbLTE4OTI4NjU5OSwyMDE3NjcwMTk5LDEyMD
+cyOTIwMzAsODU1MTcxNDMxLDE3MDkyOTM3MDddfQ==
 -->
